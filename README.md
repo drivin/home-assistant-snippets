@@ -1,9 +1,10 @@
 # home-assistant-snippets
 
 
-
+## Count lights with state
 Count lights with state on. light.wohnzimmer_licht is light-_group. (https://www.home-assistant.io/integrations/light.group/)
 
+```
 {% set count = namespace(value=0) %}
 {% if state_attr('light.wohnzimmer_licht', 'entity_id') != None -%}
   {% for id in state_attr('light.wohnzimmer_licht', 'entity_id') -%}
@@ -13,3 +14,4 @@ Count lights with state on. light.wohnzimmer_licht is light-_group. (https://www
   {%- endfor %}
 {%- endif %}
 {{ count.value }
+```
