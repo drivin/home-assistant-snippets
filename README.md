@@ -2,7 +2,7 @@
 
 
 ## Count lights with state
-Count lights with state on. light.wohnzimmer_licht is light_group. (https://www.home-assistant.io/integrations/light.group/)
+Count lights with state on. light.wohnzimmer_licht combine multiple lights into one entity. Its entity type is light.group. (https://www.home-assistant.io/integrations/light.group/)
 
 ```
 {% set count = namespace(value=0) %}
