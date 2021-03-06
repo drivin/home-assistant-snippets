@@ -1,4 +1,4 @@
-# home-assistant-snippets
+# home-assistant snippets
 
 
 ## Count lights with state
